@@ -1,0 +1,45 @@
+model_params:
+  backbone_name: 'Residual_VAEGAN'
+  model_name: 'MLP_class'
+  in_channels: 3
+  latent_dim: 512
+  recon_level: 2
+  img_size: 128
+  ckpt: False
+data_params:
+  data_path: "RAVDESS_CROPP_VA"
+  data_file: split_data_ia.yaml
+  train_batch_size: 128
+  val_batch_size:  64
+  test_batch_size: 64
+  patch_size: 128
+  num_workers: 4
+  mean: False
+  std: False
+  crop: 322
+  feature:
+    type: Mel_frequence
+    sr: 22050
+    n_fft: 1310
+    n_mels: 128
+    n_mfcc: 64
+    to_DB: True
+    augumentation: False
+
+
+exp_params:
+  LR: 3e-4
+  manual_seed: 999
+  find_unused_parameters: False
+  save_top_k: 5
+  monitor: val_acc
+  num_classes: 7
+  mode: max
+
+trainer_params:
+  gpus: [0]
+  max_epochs: 100
+
+logging_params:
+  save_dir: "logs/"
+  name: "MLP_class"
