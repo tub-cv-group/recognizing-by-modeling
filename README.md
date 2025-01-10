@@ -1,5 +1,12 @@
 # How Do You Perceive My Face? Recognizing Facial Expressions in Multi‐Modal Context by Modeling Mental Representations
 
+__How Do You Perceive My Face? Recognizing Facial Expressions in Multi-Modal Context by Modeling Mental Representations__
+_Florian Blume*, Runfeng Qu*, Pia Bideau, Martin Maier, Rasha Abdel Rahman, Olaf Hellwich_
+
+Link to paper: https://arxiv.org/abs/2409.02566
+
+![grafik](https://github.com/user-attachments/assets/c57d9729-b5e3-47e2-b811-5c7de92a35bb)
+
 ## Requirements
 - Clone the repository
     ``` bash
